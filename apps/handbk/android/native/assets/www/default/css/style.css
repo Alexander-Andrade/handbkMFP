@@ -1,0 +1,11 @@
+
+/* Stylesheet content from css/style.css in folder common */
+body {
+	position: absolute;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

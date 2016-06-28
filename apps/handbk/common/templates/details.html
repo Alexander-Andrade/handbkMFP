@@ -1,0 +1,24 @@
+<ion-view title="Details">
+<ion-nav-bar class="bar-stable">
+  <ion-nav-back-button class= ></ion-nav-back-button>        
+</ion-nav-bar>
+ 
+    <ion-content padding="true" class="has-header">
+    <ion-nav-back-button class= ></ion-nav-back-button>
+        <ion-list>
+            <ion-item class="item-thumbnail-left">
+                <img ng-src="images/p{{currentMark.PROFESS_ID}}.png" />
+                <h2>Professor</h2>
+                <p>{{currentMark.FIRST_NAME}}</p>
+                <p>{{currentMark.SECOND_NAME}}</p>
+            </ion-item>
+        </ion-list>
+        <ion-list>
+            <ion-item>Study:  {{currentMark.NAME}}</ion-item>
+            <ion-item>Hours : {{currentMark.HOURS}}</ion-item>
+            <ion-item>Date : {{currentMark.DATE | date:'mediumDate'}}</ion-item>
+            <ion-item>Mark : {{currentMark.MARK}}</ion-item>
+            <ion-item>Everage mark : {{currentMark.AVG_MARK}}</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

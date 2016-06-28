@@ -1,0 +1,25 @@
+<ion-view title="Marks">
+<ion-nav-bar class="bar-stable">
+  <ion-nav-back-button class= ></ion-nav-back-button>        
+</ion-nav-bar>
+ 
+    <ion-content padding="true" class="has-header">
+    
+        <form class="list">
+            <ion-item class="item-thumbnail-left">
+                 <img ng-src="images/{{currentStudent.STUDENT_ID}}.png" />
+                <h2>{{currentStudent.FIRST_NAME}}  {{currentStudent.SECOND_NAME}}</h2>
+                <p>Group: {{currentStudent.GROUP_NUMBER}}</p>
+            </ion-item>
+        </form>
+        <ion-list></ion-list>
+        <ion-list></ion-list>
+        <ion-list>
+            <ion-item class="item" ng-repeat= "mark in marks" ng-click="goToDetails(mark)"  > 
+              <p> {{mark.NAME}}:  {{mark.MARK}}  </p>
+            </ion-item>
+        </ion-list>
+        <ion-list></ion-list>
+        <ion-list></ion-list>
+    </ion-content>
+</ion-view>

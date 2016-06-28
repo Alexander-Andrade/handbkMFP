@@ -1,0 +1,15 @@
+<ion-view title="Students">
+    <ion-content padding="true" class="has-header">
+        <ion-list>
+            <ion-item class="item-thumbnail-left" ng-repeat="student in students" ng-click="goTo(student)">
+                <img ng-src="images/{{student.STUDENT_ID}}.png" />
+                <h2>{{student.FIRST_NAME}} {{student.SECOND_NAME}}</h2>
+                <p>Group: {{student.GROUP_NUMBER}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+    <div class="bar bar-footer">
+    <div class="title"> </div>
+    <button class="button button-clear button-positive" ng-click="doLogout()">Logout</button>
+    </div>
+</ion-view>
